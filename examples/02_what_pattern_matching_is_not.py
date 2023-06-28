@@ -16,14 +16,19 @@ def describe_list_of_points(points: list[Point]) -> str:
     match points:
         case []:
             return "No points in the list."
+
         case [Point(0, 0)]:
             return "The origin is the only point in the list."
+
         case [Point(x, y)]:
             return f"A single point {x}, {y} is in the list."
+
         case [Point(0, y1), Point(0, y2)]:
             return f"Two points on the Y axis at {y1}, {y2} are in the list."
+
         case [Point(x, y), *_] if x == y:
             return "The first point in the list is on the diagonal."
+
         case _:
             return "Something else is found in the list."
 
