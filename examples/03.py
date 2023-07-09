@@ -1,3 +1,7 @@
+# In 2018, Python's Benevolent Dictator for Life, Guido van Rossum, stepped down,
+# partly because of the vitriol around PEP 572 https://peps.python.org/pep-0572/,
+# which adds *assignment expressions* to Python.
+
 import re
 
 phone_number_finder = re.compile(r"\d{3}-\d{3}-\d{4}")
